@@ -167,8 +167,8 @@ app.post('/climate', (req, res) => {
         url:process.env.rapidapi_url,
         params: { q: city },
         headers: {
-            'x-rapidapi-key': process.env.x-rapidapi-key,
-            'x-rapidapi-host': process.env.x-rapidapi-host
+            'x-rapidapi-key': process.env.x_rapidapi_key,
+            'x-rapidapi-host': process.env.x_rapidapi_host
         }
     };
 
