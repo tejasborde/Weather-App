@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+nav {
+    height: 8% !important;
+}
+
+.navbar-nav {
+    margin-right: 40px !important;
+}
+
+.bg {
+    background: linear-gradient( #3B2667, #BC78EC);
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    padding-top: 2rem;
+    font-size: 30px;
+}
+
+#card {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    height: 550px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient( 135deg, #EEAD92 10%, #6018DC 100%);
+    box-shadow: 5px 5px 5px #3B2667;
+}
+
+#form {
+    /* background-color: white; */
+    background: linear-gradient( 135deg, #EEAD92 10%, #6018DC 100%);
+    width: 90%;
+    max-width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #3B2667;
+}
+
+#flash-msg {
+    width: 90%;
+    max-width: 525px;
+    font-size: 10px;
+}
+
+#card .row {
+    transition: all 200ms;
+}
+
+#card .row:hover {
+    transform: scale(1.2);
+}
+
+#back-row {
+    transform: none;
+}
+
+#form .row {
+    transform: none;
+}
+
+input {
+    width: 90% !important;
+    height: 30px !important;
+    margin-left: 5% !important;
+}
+
+label {
+    margin-left: 15%;
+    width: 70%;
+}
+
+#get-btn {
+    background-color: #3B2667;
+    color: aliceblue;
+}
+
+#get-btn:hover {
+    background-color: aliceblue;
+    color: #3B2667;
+}
+
+#img-temp {
+    display: flex;
+    justify-content: center;
+}
+
+#city-name {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#cont-name {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#wind-data {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+#weather-img {
+    height: 70px;
+    width: 70px;
+}
+
+#date {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+#date-time {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+}
+
+#forecast-row {
+    margin-left: 8%;
+    margin-top: -3%;
+}
+
+#forecast-row .col .card {
+    background: linear-gradient( 135deg, #EEAD92 10%, #6018DC 100%);
+    border-radius: 8px;
+    height: 500px !important;
+    border: 1px solid black;
+}
+
+#forecast-btn {
+    width: 100px;
+    font-size: 10px;
+    background-color: #3B2667;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+#forecast-btn:hover {
+    background-color: aliceblue;
+    color: #3B2667;
+}
+
+#back {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#back-btn {
+    background-color: #3B2667;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#back-btn:hover {
+    background-color: aliceblue;
+    color: #3B2667;
+}
+
+#forecast-row {
+    transform: none;
+}
+
+#forecast-row .col {
+    margin-top: 100px;
+}
+
+#forecast-row .card-body .col {
+    margin-top: 0px;
+}
+
+#home {
+    margin-top: 10px;
+}
+
+#home .row {
+    transform: none;
+}
+
+.forecast-card-img {
+    display: flex;
+    justify-content: center;
+}
+
+#home-btn {
+    background-color: #3B2667;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#home-btn:hover {
+    background-color: aliceblue;
+    color: #3B2667;
+}
+
+.card-body .row {
+    font-size: 10px;
+}
+
+#avg-temp {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 15px !important;
+        margin-left: 8px !important;
+    }
+    .navbar-nav {
+        margin-right: 15px !important;
+    }
+    .nav-item {
+        font-size: .5rem !important;
+    }
+    #title {
+        font-size: 20px;
+    }
+    #card {
+        height: 500px;
+    }
+    #flash-msg {
+        font-size: 5px;
+    }
+    input {
+        width: 70% !important;
+        height: 30px !important;
+        margin-left: 15% !important;
+    }
+    input::placeholder {
+        font-size: 10px;
+    }
+    label {
+        margin-left: 15%;
+        width: 70%;
+        font-size: 12px;
+    }
+    #CityList {
+        margin-left: 10%;
+    }
+    #get-btn {
+        width: 40% !important;
+        margin-left: 30% !important;
+        height: 25px !important;
+        font-size: 6px !important;
+    }
+    #cont-name {
+        font-size: 10px;
+    }
+    #wind-data {
+        font-size: 10px;
+    }
+    #city-name {
+        font-size: 16px;
+    }
+    #date,
+    #date-time {
+        font-size: 9px;
+    }
+    #back-btn {
+        width: 20% !important;
+        font-size: 10px !important;
+    }
+    #home-btn {
+        width: 20% !important;
+        font-size: 10px !important;
+    }
+    #forecast-row {
+        margin-left: 0%;
+    }
+}

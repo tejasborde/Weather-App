@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+nav {
+    height: 8% !important;
+}
+
+.navbar-nav {
+    margin-right: 40px !important;
+}
+
+.bg {
+    background: linear-gradient( #3B2667, #BC78EC);
+    background-position: center;
+    height: 92%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register-block {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    height: 500px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient( 135deg, #EEAD92 10%, #6018DC 100%);
+    box-shadow: 5px 5px 5px #3B2667;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#register-block input::placeholder {
+    font-size: 12px;
+}
+
+#password-block {
+    display: flex;
+    flex-direction: row;
+}
+
+#sub-btn {
+    background-color: #3B2667;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#sub-btn:hover {
+    background-color: aliceblue;
+    color: #3B2667;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 15px !important;
+        margin-left: 8px !important;
+    }
+    .navbar-nav {
+        margin-right: 15px !important;
+    }
+    .nav-item {
+        font-size: .7rem !important;
+    }
+    label {
+        font-size: 10px;
+    }
+    #register-block {
+        height: 430px;
+    }
+    #register-block input::placeholder {
+        font-size: 8px;
+    }
+    #password-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    form input {
+        height: 28px;
+    }
+    #password-block input {
+        width: 222% !important;
+    }
+    #password-block label {
+        width: 160px;
+    }
+    #sub-btn {
+        width: 70px !important;
+        font-size: 8px;
+    }
+}
