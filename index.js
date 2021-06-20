@@ -120,9 +120,7 @@ app.post("/register", (req, res) => {
 })
 
 
-app.get("/userprofile", isLoggedIn, (req, res) => {
-    res.render("userprofile");
-})
+
 
 
 app.post("/login", passport.authenticate("local", {
@@ -157,7 +155,7 @@ app.get('/login', (req, res) => {
 })
 
 
-app.post('/climate', (req, res) => {
+app.post('/climate',isLoggedIn, (req, res) => {
 
     const city = req.body.city;
 
@@ -193,6 +191,11 @@ app.post('/climate', (req, res) => {
         console.error(error);
     });
 
+})
+
+app.get('/forecast',isLoggedIn, (req, res) => {
+    req.flash('error',"This feature is not available right now.We are working on it.");
+    res.redirect('/');
 })
 
 app.listen(process.env.PORT || 3000, () => {
