@@ -6,13 +6,13 @@ html {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-nav {
+/* nav {
     height: 8% !important;
 }
 
 .navbar-nav {
     margin-right: 40px !important;
-}
+} */
 
 .bg {
     background: linear-gradient( #3B2667, #BC78EC);
@@ -240,7 +240,7 @@ label {
 }
 
 @media (max-width: 768px) {
-    .navbar-brand {
+    /* .navbar-brand {
         font-size: 15px !important;
         margin-left: 8px !important;
     }
@@ -249,7 +249,7 @@ label {
     }
     .nav-item {
         font-size: .5rem !important;
-    }
+    } */
     #title {
         font-size: 20px;
     }

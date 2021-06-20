@@ -5,19 +5,19 @@ html {
     margin: 0;
     font-family: 'Rubik Mono One', sans-serif;
 }
-
-nav {
+/*
+ nav {
     height: 8% !important;
 }
 
 .navbar-nav {
     margin-right: 40px !important;
-}
+} */
 
 .bg {
     background: linear-gradient( #3B2667, #BC78EC);
     background-position: center;
-    height: 92%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: auto;
@@ -69,7 +69,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .navbar-brand {
+    /* .navbar-brand {
         font-size: 15px !important;
         margin-left: 8px !important;
     }
@@ -78,7 +78,7 @@ nav {
     }
     .nav-item {
         font-size: .7rem !important;
-    }
+    } */
     label {
         font-size: 10px;
     }
