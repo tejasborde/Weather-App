@@ -33,67 +33,67 @@
         </div>
     </nav>
     <%- include("partials/registerflash") %>
+        <div class="bg">
+            <div class="container" id="register-block">
+                <div class="row" id="title"> Sign-Up</div>
+                <div class="row">
+                    <form action="/register" method="POST">
+                        <div class="row my-3">
+                            <div class="col-6 px-md-4">
+                                <div class="form-group">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" class="form-control" name="fname" id="fname"
+                                        placeholder="FIRST NAME" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="col-6 px-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" class="form-control" name="lname" id="lname"
+                                        placeholder="LAST NAME" autocomplete="off" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col px-md-4">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                                        autocomplete="off" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-3" id="password-block">
+                            <div class="col-6 px-md-4">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password"
+                                        placeholder="Password" autocomplete="off" required>
+                                </div>
+                            </div>
+                            <div class="col-6 px-md-4">
+                                <div class="form-group">
+                                    <label for="cpass">Confirm Password</label>
+                                    <input type="text" class="form-control" name="cpass" id="cpass"
+                                        placeholder="Confirm Password" autocomplete="off" required>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="container" id="register-block">
-            <div class="row" id="title"> Sign-Up</div>
-            <div class="row">
-                <form action="/register" method="POST">
-                    <div class="row my-3">
-                        <div class="col-6 px-md-4">
-                            <div class="form-group">
-                                <label for="fname">First Name</label>
-                                <input type="text" class="form-control" name="fname" id="fname" placeholder="FIRST NAME"
-                                    autocomplete="off" required>
+                        <div class="row mt-5" id="submit-block">
+                            <div class="col-4 px-md-4"></div>
+                            <div class="col-4 px-md-4">
+                                <a style="text-decoration: none;"><button type="submit" class="btn" id="sub-btn"
+                                        data-toggle="modal" data-target="#exampleModal">Register</button></a>
                             </div>
+                            <div class="col-4 px-md-4"></div>
                         </div>
-                        <div class="col-6 px-md-4">
-                            <div class="form-group">
-                                <label for="lname">Last Name</label>
-                                <input type="text" class="form-control" name="lname" id="lname" placeholder="LAST NAME"
-                                    autocomplete="off" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col px-md-4">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
-                                    autocomplete="off" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3" id="password-block">
-                        <div class="col-6 px-md-4">
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" class="form-control" name="password" id="password"
-                                    placeholder="Password" autocomplete="off" required>
-                            </div>
-                        </div>
-                        <div class="col-6 px-md-4">
-                            <div class="form-group">
-                                <label for="cpass">Confirm Password</label>
-                                <input type="text" class="form-control" name="cpass" id="cpass"
-                                    placeholder="Confirm Password" autocomplete="off" required>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row mt-5" id="submit-block">
-                        <div class="col-4 px-md-4"></div>
-                        <div class="col-4 px-md-4">
-                            <a style="text-decoration: none;"><button type="submit" class="btn" id="sub-btn"
-                                    data-toggle="modal" data-target="#exampleModal">Register</button></a>
-                        </div>
-                        <div class="col-4 px-md-4"></div>
-                    </div>
-
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
         </div>
-
 
 
 
