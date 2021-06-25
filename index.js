@@ -15,7 +15,8 @@ const express = require('express'),
     middleware = require("./middleware"),
     authRoutes = require('./routes/auth'),
     services = require('./routes/services'),
-    homeRoutes = require('./routes/index');
+    homeRoutes = require('./routes/index'),
+    passport_config=require('./passport-config');
 
 
 
@@ -35,8 +36,8 @@ app.use(session({
         maxAge: 2 * 60 * 1000
     }
 }));
-passport.serializeUser(User.serializeUser()); 
-passport.deserializeUser(User.deserializeUser()); 
+// passport.serializeUser(User.serializeUser()); 
+// passport.deserializeUser(User.deserializeUser()); 
 passport.use(new LocalStrategy(User.authenticate()));
 
 

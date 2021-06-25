@@ -36,7 +36,15 @@
                             <%}else {%>
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">
-                                        <%= currentUser.firstname%>
+                                        <% if(currentUser.displayName){%>
+                                            <p>
+                                                <%= currentUser.given_name %>
+                                            </p>
+                                            <%}else{%>
+                                                <p>
+                                                    <%= currentUser.firstname %>
+                                                </p>
+                                                <%} %>
                                     </a>
                                 </li>
                                 <li class="nav-item">
