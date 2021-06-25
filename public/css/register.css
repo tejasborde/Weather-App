@@ -68,6 +68,20 @@ html {
     color: #3B2667;
 }
 
+.google {
+    box-shadow: 0 4px 8px 0 rgba(29, 53, 87, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+   background-color: #F1FAEE;
+}
+
+.google a {
+    color: #1D3557;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     /* .navbar-brand {
         font-size: 15px !important;
@@ -106,4 +120,16 @@ html {
         width: 70px !important;
         font-size: 8px;
     }
+    #g_img{
+        height: 12px;
+        width: 12px;
+    }
+    .google {
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 6px;
+   background-color: #F1FAEE;
+}
+
 }

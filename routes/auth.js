@@ -5,6 +5,16 @@ const express    = require("express"),
     passport = require("passport");
      
 
+router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+
+router.get('/google/callback', passport.authenticate('google', { failureRedirect: '/login' }),
+    function (req, res) {
+    req.flash("success", `Logged in as ${req.user.emails[0].value}`);
+    res.redirect('/');
+  }
+);
+
+
 
 router.get('/register', (req, res) => {
     res.render('register');
