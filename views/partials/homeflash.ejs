@@ -1,0 +1,41 @@
+<% if(error && error.length> 0){ %>
+
+    <div>
+        <div class="alert alert-danger  alert-dismissible" style="margin-bottom: 0px;">
+            <strong>
+                <%=error %>
+            </strong>
+            <a href="/" class="close float-end" data-dismiss="alert" aria-label="close">&times;</a>
+        </div>
+    </div>
+
+
+    <% } %>
+
+        <% if(success && success.length> 0){ %>
+
+            <div>
+                <div class="alert alert-success  alert-dismissible" style="margin-bottom: 0px;">
+                    <strong>
+                        <%=success %>
+                    </strong>
+                    <a href="/" class="close float-end" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+
+
+            <% } %>
+
+                <% if(warning && warning.length> 0){ %>
+
+                    <div>
+                        <div class="alert alert-warning  alert-dismissible" style="margin-bottom: 0px;">
+                            <strong>
+                                <%=warning %>
+                            </strong>
+                            <a href="/" class="close float-end" data-dismiss="alert" aria-label="close">&times;</a>
+                        </div>
+                    </div>
+
+
+                    <% } %>
