@@ -21,101 +21,99 @@
     <div class="bg">
         <div class="container-fluid py-3">
         </div>
-        <%- include("partials/flash") %>
-
-            <div class="container-fluid mt-5" id="card">
-                <div class="row mt-5 mb-3">
-                    <div class="col mt-3">
-                        <div class="container" id="img-temp">
-                            <img src="<%= i %>" id="weather-img">
-                        </div>
-                        <div class="container " id="img-temp">
-                            <%= data.current.temp_c %> °C
-                        </div>
+        <div class="container-fluid mt-5" id="card">
+            <div class="row mt-5 mb-3">
+                <div class="col mt-3">
+                    <div class="container" id="img-temp">
+                        <img src="<%= i %>" id="weather-img">
+                    </div>
+                    <div class="container " id="img-temp">
+                        <%= data.current.temp_c %> °C
                     </div>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col mt-2">
-                        <div class="container" id="cont-name">
-                            Wind
-                        </div>
-                        <div class="container" id="wind-data">
-                            <i class="fas fa-wind">&nbsp;&nbsp;</i>
-                            <%=data.current.wind_mph%>
-                                MPH(Speed)
-                        </div>
-                        <div class="container" id="wind-data">
-                            <i class="fas fa-map-signs">&nbsp;&nbsp;&nbsp;&nbsp;</i>
-                            <%=data.current.wind_dir%>(Direction)
-                        </div>
-                        <div class="container" id="wind-data">
-                            &nbsp;
-                            <%=data.current.wind_degree%>°(Degrees)
-                        </div>
+            <div class="row">
+                <div class="col mt-2">
+                    <div class="container" id="cont-name">
+                        Wind
+                    </div>
+                    <div class="container" id="wind-data">
+                        <i class="fas fa-wind">&nbsp;&nbsp;</i>
+                        <%=data.current.wind_mph%>
+                            MPH(Speed)
+                    </div>
+                    <div class="container" id="wind-data">
+                        <i class="fas fa-map-signs">&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                        <%=data.current.wind_dir%>(Direction)
+                    </div>
+                    <div class="container" id="wind-data">
+                        &nbsp;
+                        <%=data.current.wind_degree%>°(Degrees)
                     </div>
                 </div>
+            </div>
 
-                <div class="row pt-3 mt-3">
-                    <div class="col">
-                        <div class="container" id="city-name">
-                            <% if(name!="" ) {%>
+            <div class="row pt-3 mt-3">
+                <div class="col">
+                    <div class="container" id="city-name">
+                        <% if(name!="" ) {%>
+                            <div>
+                                <%=name%>
+                            </div>
+                            <%}else {%>
                                 <div>
-                                    <%=name%>
+                                    <%= data.location.name %>
                                 </div>
-                                <%}else {%>
-                                    <div>
-                                        <%= data.location.name %>
-                                    </div>
-                                    <%} %>
+                                <%} %>
 
-                        </div>
-                        <div class="container" id="cont-name">
-                            <%= data.location.region %>
-                        </div>
-                        <div class="container" id="cont-name">
-                            <%= data.location.country %>
-                        </div>
+                    </div>
+                    <div class="container" id="cont-name">
+                        <%= data.location.region %>
+                    </div>
+                    <div class="container" id="cont-name">
+                        <%= data.location.country %>
                     </div>
                 </div>
-                <div class="row pt-3 mb-5">
-                    <div class="col">
-                        <div class="container" id="date">
-                            <%= date_data.date %>
-                        </div>
-                        <div class="container" id="date-time">
-                        </div>
+            </div>
+            <div class="row pt-3 mb-5">
+                <div class="col">
+                    <div class="container" id="date">
+                        <%= date_data.date %>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="container" id="date">
-                            <%= data.location.localtime%>
-                        </div>
-                        <div class="container" id="date">
-                            <%= data.location.tz_id %>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col" id="forecast">
-                        <a href="/forecast"><button type="button" class="btn mx-5 float-end"
-                                id='forecast-btn'>Forecast</button></a>
-
+                    <div class="container" id="date-time">
                     </div>
                 </div>
             </div>
 
-
-            <div class="container-fluid fixed-bottom" id="back">
-                <div class="row" id="back-row">
-                    <div class="col">
-                        <a href="/"><button type="button" class="btn float-end" id="back-btn">Back</button></a>
+            <div class="row">
+                <div class="col">
+                    <div class="container" id="date">
+                        <%= data.location.localtime%>
+                    </div>
+                    <div class="container" id="date">
+                        <%= data.location.tz_id %>
                     </div>
                 </div>
-
             </div>
+            <div class="row mt-3">
+                <div class="col" id="forecast">
+                    <a href="/forecast"><button type="button" class="btn mx-5 float-end"
+                            id='forecast-btn'>Forecast</button></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid fixed-bottom" id="back">
+            <div class="row" id="back-row">
+                <div class="col">
+                    <a href="/"><button type="button" class="btn float-end" id="back-btn">Back</button></a>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
